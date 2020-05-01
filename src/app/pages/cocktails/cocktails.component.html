@@ -1,0 +1,23 @@
+<div class="container padding-10">
+    <h1>Cocktail filter</h1>
+    <div class="container">
+        <div class="row padding-10">
+            <app-filters #listFilter></app-filters>
+        </div>
+
+        <section class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <p class="h4 margin-left-20">Results</p>
+                </div>
+                <div class="row">
+                    <app-cocktail-filter class="col-md-3" *ngFor="let cocktail of cocktailFilter" [dataCocktail]=cocktail></app-cocktail-filter>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+
+</div>
